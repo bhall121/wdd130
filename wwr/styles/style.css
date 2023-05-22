@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:wght@300&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -22,7 +26,14 @@ main section {
     height: 725px;
 }
 body {
-background-color: #FFFFFF;
+    font-family: "Rubik", Verdana, sans-serif;
+    font-size: 22px;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #FFFFFF;
@@ -30,13 +41,19 @@ header {
 nav a {
     color: #3B4C9D;
     text-decoration: none;
+    text-align: center;
+    padding: 35px;
 }
 nav a:hover {
     color: #748CCC;
 }
 .book, .join {
-    color: #3B4C9D;
+    background-color: #934439ee;
+    color: #000000;/*#3B4C9D;*/
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: #748CCC;
@@ -45,23 +62,33 @@ nav a:hover {
     background-color: #934439;
 }
 .msg {
+    line-height: 1.5em;
     background-color: #D3DAEE;
+    padding: 35px;
 }
 footer {
     background-color: #D3DAEE;
     color: #000000;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
+    font-family: "Permanent Marker", Arial, sans-serif;
+    font-size: 2em;
     color: #3B4C9D;
+    margin-top: 10px;
 }
 h4 {
     color: #3B4C9D;
 }
 .msg h2 {
+    font-family: "Permanent Marker", Arial, sans-serif;
     color: #000000;
 }
 .msg p {
+    font-size: 0.8em;
     color: #000000;
+    padding-bottom: 15px;
 }
 footer a {
     color: #3B4C9D;
@@ -76,9 +103,27 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .icon, .logo {
     width: 80px;
 }
 #hero-img {
     width: 100%;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.icon {
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #934439;
+}
+main section img {
+    box-sizing: border-box;
 }
