@@ -191,6 +191,49 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+.intro-box {
+    /* background-color: #D3DAEE; */
+    border-top: 5px solid #934439;
+    border-bottom: 5px solid #934439;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.intro-box h1 {
+    font-family: "Permanent Marker", Arial, sans-serif;
+    padding: 20px;
+}
+.intro-box p {
+    max-width: 600px;
+    margin: 60px auto;
+}
+#intro-img-box {
+    padding: 20px;
+    margin: 40px;
+}
+.rivers-grid h2 {
+    font-family: "Permanent Marker", Arial, sans-serif;
+}
+.river {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    align-items: center;
+    margin: 20px;
+}
+.river h2 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    align-items: center;
+    padding: 40px;
+    font-size: 2em;
+}
+.river p {
+    padding: 10px 20px 10px 80px;
+}
+#river2 {
+    background-color: #D3DAEE;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
