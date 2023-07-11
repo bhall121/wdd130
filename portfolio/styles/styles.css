@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-size: 22px;
 }
-#content {
+.content {
     margin: 0 auto;
 }
 .background {
@@ -102,11 +102,43 @@ footer a {
 footer a:hover {
     background-color: #9E90A2;
 }
+#exp-content {
+    text-align: center;
+    padding: 50px;
+}
+#exp-content h1 {
+    margin: 80px;
+}
+#python-background, #html-background {
+    display: grid;
+    background-color: #B6C2D9;
+    padding: 60px;
+    max-width: 1600px;
+    margin: 100px auto;
+}
+#python-background {
+    grid-template-columns: 40% 60%;
+}
+#html-background {
+    grid-template-columns: 60% 40%;
+}
+#python-background p, #html-background p {
+    margin: 100px 60px;
+    line-height: 30px;
+    color: transparent;
+    text-shadow: 0 0 10px #043444;
+}
+#python-background:hover p, #html-background:hover p {
+    color: #043444;
+    transition: 1s;
+    text-shadow: none;
+}
 .flip-box {
     background-color: transparent;
-    width: 1200px;
-    height: 900px;
-    perspective: 5000px;
+    width: 1120px;
+    height: 750px;
+    perspective: 2000px;
+    margin: 0 auto;
 }
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -114,12 +146,12 @@ footer a:hover {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1.2s;
     transform-style: preserve-3d;
 }
 /* Do a vertical flip when you move the mous over the flip box container */
 .flip-box:hover .flip-box-inner {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
@@ -128,17 +160,35 @@ footer a:hover {
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    text-align: center;
 }
 /* Style the front side */
-.flip-box-front {
-    background-color: black;
+.flip-box-front h2 {
+    color: #043444;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    right: 40%;
 }
 /* Style the back side */
 .flip-box-back {
-    background-color: #B6C2D9;
     color: #043444;
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
-#boats {
-    z-index: -1;
+#backside-background {
+    background-color: #B6C2D9EE;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    right: 10%;
+    left: 10%;
+}
+.flip-box-front img, .flip-box-back img {
+    width: 100%;
+    border: 10px solid #043444;
+}
+.flip-box-back p {
+    padding: 100px 60px;
+    line-height: 30px;
 }
